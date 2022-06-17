@@ -1,0 +1,40 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia - Create new page
+{% endblock %}
+
+{% block body %}
+
+<h1>Create a new page in Encyclopedia</h1>
+
+<p>Fill the form to create a Encyclopedia page.</p>
+<p><a href="https://docs.github.com/cn/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">
+    Getting started with writing Markdown
+</a></p>
+
+<form action="{% url 'create' %}" method="post">
+    {% csrf_token %}
+    <!--
+    <label for="pagetitle">Title</label>
+    <input type="text", name="pagetitle"><br>
+    <p><label for="markdown">Markdown Content:</label></p>
+    <textarea id="markdown" name="markdown" rows="50", cols="50">
+        Enter Markdown content for the page.
+    </textarea>
+    -->
+    <table>
+        {{ form.as_table }}
+        <tr>
+            <!--no-break space-->
+            <td>&nbsp</td>
+            <td>
+                <Input type="submit", value="Submit">
+            </td>
+            
+        </tr>
+    </table>
+
+</form>
+
+{% endblock %}
