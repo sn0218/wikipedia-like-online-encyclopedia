@@ -2,10 +2,12 @@
 
 ![wikiJPG](https://user-images.githubusercontent.com/48129546/174205062-6f0c2e99-8fa4-4316-b431-fcd5c6995af9.JPG)
 
+
 ## Description
 The wikipedia-like online encyclopedia is written in Python Django framework. User can visit  an encyclopedia entry to view the content. 
 The encyclopedia supports the search for entry queried by the user. New entry can be created by users and existing entries can be edited online.
 There is a 'random page' to display a page of encyclopedia entry at random.
+
 
 ## Getting Started
 ```
@@ -14,6 +16,7 @@ cd wikipedia-like-online-encyclopedia
 pip install - requirements.txt
 python manage.py runserver
 ```
+
 
 ## Specification
 - **Entry Page:** Visiting /wiki/TITLE, where TITLE is the title of an encyclopedia entry, should render a page that displays the contents of that encyclopedia entry.
