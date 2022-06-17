@@ -13,7 +13,7 @@ There is a 'random page' to display a page of encyclopedia entry at random.
 ```
 git-clone https://github.com/sn0218/wikipedia-like-online-encyclopedia
 cd wikipedia-like-online-encyclopedia
-pip install - requirements.txt
+pip install -requirements.txt
 python manage.py runserver
 ```
 
